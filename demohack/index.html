@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <title>Pokemon</title>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<style>
+
+
+</style>
+
+<body>
+  <div class="container p-2">
+    <header>
+      <input type="text" id="pokemonName" class="form-control w-50 mx-auto m-3" placeholder="Please Enter Pokemon" />
+      <button class="btn btn-primary d-block mx-auto" onclick="clickListen()">
+        Search
+      </button>
+    </header>
+    <!-- <main id='mainPage' class='d-flex flex-wrap'> -->
+      <div class="container align-center justify-content-center my-5" id='filterPok'>
+        <div class="card" style="width: 18rem">
+          <img id='pokiImage' src="" class="card-img-top" alt="Pokemon Image" />
+          <div class="card-body  text-center">
+            <h5 class="card-title" id='pokemonNameSet'></h5>
+            
+            <p class="card-text weight" id='weightSet'></p>
+          </div>
+        </div>
+      </div>
+  </div>
+  </main>
+  <script>
+    // async function fetchData() {
+    //   const mainPage = document.getElementById('mainPage')
+
+    //   const response = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=100`)
+    //   const data = await response.json()
+    //   console.log(data.results)
+
+
+
+    //   for (x = 1; x < data.results.length; x++) {
+    //     const imagePoki = document.createElement('img');
+    //     const title = document.createElement('h1');
+    //     const weight = document.createElement('p');
+    //     const card = document.createElement('div')
+    //     card.setAttribute('id', 'card')
+    //     const pokiIndividual = await fetch(data.results[x].url)
+    //     const pokiIndividualJSON = await pokiIndividual.json()
+    //     console.log(pokiIndividualJSON)
+
+    //     //Adding content
+    //     weight.innerHTML = 'Weight: ' + pokiIndividualJSON.weight
+    //     weight.style.color = 'red'
+    //     title.innerHTML = data.results[x].name;
+    //     imagePoki.setAttribute('src', pokiIndividualJSON.sprites.other.dream_world.front_default)
+
+
+    //     card.appendChild(title)
+    //     card.appendChild(imagePoki)
+    //     card.appendChild(weight)
+    //     card.setAttribute('class', 'card w-25 m-2 shadow-sm text-center')
+    //     mainPage.appendChild(card)
+
+    //     console.log(data.results[x].name)
+    //   }
+    // }
+    // fetchData()
+    
+
+    
+    const inputValue = document.getElementById('pokemonName')
+    const pokiName = document.getElementById('pokemonNameSet')
+    const weight = document.getElementById('weightSet')
+    const mainPage = document.getElementById('filterPok')
+    const imageSrc = document.getElementById('pokiImage')
+    mainPage.style.display = 'none'
+    const clickListen = async () => {
+    const value = inputValue.value
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${value}`)
+    const data = await response.json()
+    mainPage.style.display = 'block'
+    pokiName.innerHTML = data.name
+    weight.innerHTML = data.weight;
+    imageSrc.setAttribute('src', data.sprites.other.dream_world.front_default)
+    imageSrc.setAttribute('id', 'Hwllo')
+
+    }
+  </script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>
