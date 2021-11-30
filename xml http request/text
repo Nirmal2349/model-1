@@ -1,0 +1,150 @@
+Friday 26/11/2021
+MRF-map,reduce,filter
+
+Syntax
+
+Uses 
+
+sample Example programs to use MRF 
+
+Copy By value and Reference
+
+Task:MRF on rest countries api
+
+
+Map:
+1.will be applicable to array
+2.will take function as a parameter
+3.it will be applied to each and every element of the array
+4. it will return a new array
+
+syntax:
+arrayname.map(function);
+
+function consit of ele as a main parameter
+ele-> array elements
+
+
+result:its a new array
+
+exceptions:
+
+1.map will have an error if no function is passed 
+
+typeerror
+
+2.suppose if return is missing , then it will throw undefined 
+
+array of undefined
+
+
+ex:
+var student=[{name:'alex',marks:60},{name:'bob',marks:70}];
+console.log(student.name)
+using above array increase the marks of the students by 10
+using map function
+
+
+Filter:
+1.will be applicable to array
+2.will take function as a parameter
+3.it will be applied to each and every element of the array
+4.if a condition inside an array get passed , it will be pushed to new array or else it will be ignored...
+
+
+
+syntax:
+arrayname.filter(function);
+
+function consit of ele as a main parameter
+ele-> array elements
+
+
+1.filter will have an error if no function is passed 
+
+typeerror
+
+2.suppose if return is missing , then it will throw undefined 
+
+array of undefined
+
+
+Ex: 
+var student=[{name:'alex',marks:60},{name:'bob',marks:70},{name:'alice',marks:80}];print the names  of the students whose marks greater than 60
+
+Expected Output:
+var res=[bob,alice];
+
+
+
+
+Reduce:will reduce the entire array into single values
+syntax:
+arrayname.reduce(function);
+
+function consit of acc,ele
+acc,ele as a parameter
+
+acc:initial value
+acc:accumulator
+ele/item:array element
+
+
+s1:if acc is not defined 
+acc will take first index value as a parameter
+
+
+s2:if acc is  defined 
+acc will take initalized value
+
+
+
+let arr=[12,14,65.5,87];
+sum of the array 
+
+
+29/11/2021
+Copy by value and references
+
+only primitve data types are involved...
+primitve:Number,String Boolean.
+
+Copy by references
+non-primitve:array and objects
+
+rest and spread parameter(ES6)
+
+Spread operator: ...
+
+Rest parameter:...restparamname
+usage: in functions 
+
+array destructuring
+
+unpacking array elements into bunch of variables
+destructuring:unpacking
+
+ForEach:
+
+1.it will be applicable to array
+2.it will take function as a parameter
+3.it will also apply on each and every element of array
+4. return type undefined
+
+Syntax:arrayname.forEach();
+
+
+For of
+
+:it is used to print the elements in the array
+
+for(variable of arrayname)
+
+
+Only for forward iteration
+
+
+only for array
+
+Template literals:ES6
+
