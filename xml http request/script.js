@@ -16,7 +16,11 @@ var request = new XMLHttpRequest();
 
 //optional 3rd parameter : " True "
 
-request.open("GET", "https://restcountries.com/v3.1/all", true);
+request.open(
+  "GET",
+  "https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json",
+  true
+);
 
 // step 03: sending a connection
 
@@ -30,14 +34,23 @@ request.onload = function () {
   //request.response:server response
   var data = JSON.parse(request.response);
 
-  console.log(data);
+  // console.log(data);
 
   // for(var i=0;i<data.length;i++){
   //     console.log(data[i].name)
   // }
 
-  for (var key in data) {
-    console.log(data[key].continents);
-    // console.log(data[key].name, data[key].capital, data[key].flag);
-  }
+  // for (var key in data) {
+  //   console.log(data[key].continents);
+  //   console.log(data[key].name, data[key].capital, data[key].flag);
+  // }
+
+  let currency = data.filter((x) => {
+    for (let curr in x.currencies) {
+      if (x.currencies[curr].code === "USD") return true;
+    }
+  });
+  console.log(currency);
+
+  data.forEach((ele) => console.log(`${ele.name}-${ele.capital}-${ele.flag}`));
 };
