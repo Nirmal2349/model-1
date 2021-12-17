@@ -44,8 +44,8 @@ function displaydate() {
     
    var data = document.createElement('div');
    data.innerHTML=`Given date ${inputdate} Current date ${currentdate} <br> Year difference ${yeardiff} <br> Month difference ${monthdiff} <br>
-    Date difference ${daydiff} <br> Hour difference ${hoursdiff} <br> Minute difference ${minutediff} <br> Seconds difference ${seconddiff} <br>
-    Millisecond difference ${millisecdiff}`;
+   Date difference ${daydiff} <br> Hour difference ${hoursdiff} <br> Minute difference ${minutediff} <br> Seconds difference ${seconddiff} <br>
+   Millisecond difference ${millisecdiff}`;
    document.body.append(data)
 
 
