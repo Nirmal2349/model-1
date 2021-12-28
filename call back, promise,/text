@@ -1,0 +1,67 @@
+//Asynchronous Meaning
+// callback,promise,fetch async and await;
+//it helps for the  js to be asynchronous 
+
+//setTimeOut:to exhibit asynchronous nature
+//after a specifc amount of time it will execute
+//syntax:setTimeout(function as a param,timeinterval)
+
+
+//event loop, call stack,Event queue
+
+//call stack:it is used to keep track of functions to be executed(LIFO)
+//it is the place where functions are executed 
+
+//event queue:it is a place where async code waits for executions(FIFO)
+
+//event queue will begin its execution only if call stack is empty
+
+//Event Loop:connection between call stack and queue
+
+//call back:
+// when a function simply accepts another function as a parameter.
+//That parameter function is nothing but called as callback function
+// setTimeout(()=>{console.log("Hello guvi")},5000);
+
+
+//Naming a callback function:
+
+//Multi level functions:More than one functions 
+
+//callback hell :we don't use callback for larger functions/
+//because of callback hell scenario
+//callback :used only for short async operations(Set Timeout)
+
+
+//promise :it returns an Object as a result of async ops
+//Why promise??:To overcome call back hell scenario in js
+//3 states
+//1.pending 2.fulfiled 3.rejected
+//initial state:pending,when you create a promise(freshly)
+
+//pending to fullfilled:when you complete an Async Ops successfully(resolve)
+//pending to Rejected:when  Async Ops fails(reject)
+
+//syntax is : variablename=new Promise();
+//this object takes function as a parameter
+//inside the function we have,resolve and reject
+
+//age to vote :
+//getting age from the user:(async ops)
+
+
+//.then and .catch 
+//.then is used to access the values of the resolved state(success)
+//.catch is used to access the values of the rejected state(failure)
+//Why ?:Output of the promise is object. To access the result of the promise
+//we use .then and .catch
+
+
+//how to use promise in functions ?
+
+
+
+//advantages of promises:
+//1st adv: usage of promise as a return type of a function 
+//2nd adv:we can use to handle ,multiple async ops
+//chaining of promises
