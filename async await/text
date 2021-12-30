@@ -1,0 +1,16 @@
+//async and await
+//async function 
+//Why?:helps in writing promises easier
+//syntatic sugar:easily writing 
+//return type:promise
+//syntax:
+
+//syntax:
+// async function funname(){
+//     const res=await Promise;
+// }
+//await has to be used within async 
+//await is used within async function ,for handling readable  stream
+//to convert readable stream to object we use .json();
+//since again it is a promise we use, await keyword one more time for resolving 
+//the promises
