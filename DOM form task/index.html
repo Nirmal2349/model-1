@@ -1,16 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
     <title>DOM FORM</title>
 </head>
+
 <body>
-    <body><input id='in1' oninput='fun()'>
-        <p id="result"></p>
-    <!-- <p id="demo"></p> -->
-    <script src="index.js"></script>
-</body>
+
+    <body>
+        <form action="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <lable>Firstname</lable><br>
+                        <input type="text" id="fname"><br>
+                        <lable>Lastname</lable><br>
+                        <input type="text" id="lname"><br>
+                        <lable>Address</lable><br>
+                        <input type="text" id="address"><br>
+                        <lable>Pincode</lable><br>
+                        <input type="number" id="pin"><br>
+                        <lable>Gender</lable><br>
+                        <input type="radio" id="gender" name="m" value="male" checked>
+                        <label for="huey">male</label>
+                        <input type="radio" id="gender" name="m" value="female">
+                        <label for="dewey">female</label><br>
+                        <label>choice of food(must choose at least 2 out of 5 options)</label><br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chicken Chettinad" name="food">
+                            <label>Chicken Chettinad</label><br>
+                            <input class="form-check-input" type="checkbox" value="Masala Dosa" name="food">
+                            <label>Masala Dosa</label><br>
+                            <input class="form-check-input" type="checkbox" value="Biryani" name="food">
+                            <label>Biryani</label><br>
+                            <input class="form-check-input" type="checkbox" value="Mutton Kola Urundai" name="food">
+                            <label>Mutton Kola Urundai</label><br>
+                            <input class="form-check-input" type="checkbox" value="Idli" name="food">
+                            <label>Idli</label>
+                        </div>
+                        <lable>state</lable><br>
+                        <input type="text" id="state"><br>
+                        <lable>country</lable><br>
+                        <input type="text" id="country"><br>
+                        <button onclick="data()">submit</button>
+                    </div>
+
+
+                    <div class="col-md-8">
+                        <h1>Temporary Database</h1><br>
+                        <table class="table table-striped">
+                            <thead class="table-active">
+                                <tr>
+                                    <td>First Name</td>
+                                    <td>Last Name</td>
+                                    <td>Address</td>
+                                    <td>Pincode</td>
+                                    <td>Gender</td>
+                                    <td>Food</td>
+                                    <td>State</td>
+                                    <td>Country</td>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody" id="tbody">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+            
+
+            <script src="index.js"></script>
+        </form>
+    </body>
+
 </html>

@@ -1,63 +1,98 @@
-
-  //   var a = document.createElement("p")
-  //   a.setAttribute("id","in1");
-  //   a.innerHTML=5;
-  //   var b = document.createElement("p")
-  //   b.setAttribute("id","in2");
-  //   b.innerHTML=6;
-    
-  // var n1 = document.getElementById('in1')
-  // var n2 = document.getElementById('in2')
-  // var n3 = document.getElementById('addition');
-  // n3.innerHTML= n1 + n2;
-  // console.log(typeof(n3))
-  // document.body.append(p)
-  
-//   var a = 5;
-// var b = 6;
-// var p = document.createElement("p")
-// p.innerHTML=`${a+b}`
-// document.body.append(p);
-// var arr=""
-  // for(i=1;i<6;i++){
-     
-  //   console.log(i)
-  //   document.getElementById("demo").innerHTML=i;
-  // }
+// function date(){
+//   date.preventDefault();
+//   let address = document.getElementById("address").value
+//   let gender = document.getElementsByName("gender")
+//     let genderValue;
+//     for(let i=0;i<gender.length;i++){
+//         if(gender[i].checked){
+//             genderValue = gender[i].value
+//         }
+//     }
 // }
-  //  var arr = document.getElementById("demo");
-  //  for(var i=1;i<6;i++ ){
-  //    arr.innerHTML=i;
-  //  }
+// function Data(){
+//     Data.preventDefault();
+    
 
-  // Get the elements to be iterated
-        // let arr =document.getElementById("demo");
-  
-        // // Use a regular for-loop
-        // for (let i = 1; i < 6; i++) {
-  
-        //     // Print the current element
-        //     console.log(typeof(arr[i]));
-        // }
+//     let gender = document.getElementsByName("m")
+//     let genderValue;
+//     for(let i=0;i<gender.length;i++){
+//         if(gender[i].checked){
+//             genderValue = gender[i].value
+//         }
+//     }
+//     console.log(gender)
+//     let food = document.getElementsByName("food")
+//     let foodList = []
+//     let foodCount = 0;
+//     console.log(food)
+//     for(let i=0;i<food.length;i++){
+//         if(food[i].checked){
+//             foodList.push(food[i].value)
+//             foodCount++
+//         }
+//     }
+//     if(foodList.length>=2){
+//         result = foodList.join(", ")
+//     }else{
+//         result = alert("Choose atleast 2 options out of 5 in food")
+//     }
 
-// var arr =[45,4,9,16,25]
-// arr.sort(function(a, b){return b - a});
-// console.log(arr)
-// for (var i=0;i>arr.length;i++){
-//   console.log(arr[i])
+//     createTable(fname.value,lname.value,address.value,pin.value,genderValue,result,state.value,country.value)
+//     fname.value = ""
+//     lname.value = ""
+//     address.value = ""
+//     pin.value = ""
+//     gender.value = ""
+//     foodList = [];
+//     state.value = ""
+//     country.value = ""
 // }
 
-let numbers = [45,4,9,16,25];
-numbers.sort((a,b) => {
-    if(a > b) return 1;
-    if(a < b) return -1;
-    
-    for(i=0;i>numbers.length;i++)
-  console.log(numbers)
-return 0;
-});
+// let fname = document.getElementById("fname")
+// let lname = document.getElementById("lname")
+// let address = document.getElementById("address")
+// let pin = document.getElementById("pin")
+// let gender = document.getElementById("gender")
+// let food = document.getElementById("food")
+// let state = document.getElementById("state")
+// let country = document.getElementById("country")
 
 
+// function createTable(fname,lname,address,pincode,gender,food,state,country){
+//     let tbody = document.getElementById("tbody")
+//     let tr = document.createElement("tr")
+//     let td1 = document.createElement("td")
+//     let td2 = document.createElement("td")
+//     let td3 = document.createElement("td")
+//     let td4 = document.createElement("td")
+//     let td5 = document.createElement("td")
+//     let td6 = document.createElement("td")
+//     let td7 = document.createElement("td")
+//     let td8 = document.createElement("td")
+//     td1.innerHTML = fname;
+//     td2.innerHTML = lname;
+//     td3.innerHTML = address;
+//     td4.innerHTML = pincode;
+//     td5.innerHTML = gender;
+//     td6.innerHTML = food;
+//     td7.innerHTML = state;
+//     td8.innerHTML = country;
+//     tr.append(td1)
+//     tr.append(td2)
+//     tr.append(td3)
+//     tr.append(td4)
+//     tr.append(td5)
+//     tr.append(td6)
+//     tr.append(td7)
+//     tr.append(td8)
+//     tbody.append(tr)
+// }
+function data(){
+  let firname = document.getElementById(fname).value
+  console.log(firname);
+  let lasname = document.getElementById(lname).value
+  console.log(lasname);
+}
 
 
 
