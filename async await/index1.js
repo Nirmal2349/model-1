@@ -1,5 +1,5 @@
 //multiple api with async and await get output in console
-
+//weather api key expire create new api key for weather api 
 
 async function getdata(){
    
