@@ -46,3 +46,5 @@ function foo() {
   let res3 = document.getElementById("email").value;
   console.log(res, res1, res2, res3);
 }
+
+

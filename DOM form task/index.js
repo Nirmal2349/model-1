@@ -87,12 +87,23 @@
 //     tr.append(td8)
 //     tbody.append(tr)
 // }
-function data(){
-  let firname = document.getElementById(fname).value
-  console.log(firname);
-  let lasname = document.getElementById(lname).value
-  console.log(lasname);
-}
+function foo(){
+  // let firname = document.getElementById("fname").value
+  // console.log(firname);
+  // let lasname = document.getElementById("lname").value
+  // console.log(lasname);
+ var ele = document.getElementsByName('g');
+              
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked)
+                
+                       var  "Gender:"+ele[i].value;
+                        console.log(ele)
+                        
+            }
+        }
+
+
 
 
 
