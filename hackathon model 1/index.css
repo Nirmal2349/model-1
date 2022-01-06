@@ -1,0 +1,25 @@
+#card{
+width: 18rem;
+margin:30px;
+color: maroon;
+}
+
+
+#data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Centaur Standard Regular by Monotype;
+    background-color:rgb(157, 172, 187);
+}
+
+.header{
+    text-align: center;
+    font-family: display, serif;
+    color: maroon;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+  
+}
+
